@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html>
+<head>
+  <link href="css.css" rel="stylesheet" type="text/css" /> 
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>打地鼠</title>
+<SCRIPT LANGUAGE="JavaScript" src="js.js"> 
+</script>
+</head>
+<body>
+<center><h2>打地鼠精简版</h2></center> 
+<p align="center"   onmouseover="document.getElementById('div1').style.display='block';"  onmouseout="document.getElementById('div1').style.display='none';">游戏规则！
+	<div id="div1" >
+		计时30秒，打中得一分，打错扣一分，不打则停在当前状态。
+	</div> 
+   <div class="nTab1">
+    <div class="TabTitle">
+    <ul id="myTab" style="list-style:none">
+    <li class="active" onmouseover="nTabs(this,0);">组员1学号</li>
+    <li class="normal" onmouseover="nTabs(this,1);">组员2学号</li>            
+    </ul>
+    </div>
+      <div class="TabContent">
+  <div id="myTab_Content0">1306410202</div>
+  <div id="myTab_Content1" class="none">1306410207</div>
+  </div>  
+</div>
+
+<div class="nTab2">
+    <div class="TabTitle">
+    <ul id="myTab1" style="list-style:none">
+    <li class="active" onclick="nTabs(this,0);">组员1姓名</li>
+    <li class="normal" onclick="nTabs(this,1);">组员2姓名</li>            
+    </ul>
+    </div>
+      <div class="TabContent">
+  <div id="myTab1_Content0">孙加欢</div>
+  <div id="myTab1_Content1" class="none">黄钦</div>   
+      </div>  
+</div>
+<form name="cpanel"> 
+<center> 
+<table cellspacing=3> 
+<tr> 
+<td><input type="button" name="startstop" value="开始/结束" onClick="play()"></td> 
+<td><pre>    </pre></td> 
+<td align=right>时间:</td> 
+<td><input type="text" name="timeleft" size="4" onFocus="this.blur()"></td> 
+</tr> 
+<tr> 
+<td><input type="text" name="state" value="请单击开始/结束按钮" onFocus="this.blur()"></td> 
+<td><pre>    </pre></td> 
+<td align=right>分数:</td> 
+<td><input type="text" name="score" size="4" onFocus="this.blur()"></td> 
+</tr> 
+</table> 
+</center> 
+</form> 
+<form name="dmz"> 
+<center> 
+<table class="table1" cellpadding="2" cellspacing=2> 
+<tr> 
+<td colspan=10><hr size=1></td> 
+</tr> 
+<tr> 
+<td><input type="radio" onClick="hithead(0)"></td> 
+<td><input type="radio" onClick="hithead(1)"></td> 
+<td><input type="radio" onClick="hithead(2)"></td> 
+<td><input type="radio" onClick="hithead(3)"></td> 
+<td><input type="radio" onClick="hithead(4)"></td> 
+<td><input type="radio" onClick="hithead(5)"></td> 
+<td><input type="radio" onClick="hithead(6)"></td> 
+<td><input type="radio" onClick="hithead(7)"></td> 
+<td><input type="radio" onClick="hithead(8)"></td> 
+<td><input type="radio" onClick="hithead(9)"></td> 
+</tr> 
+<tr> 
+<td><input type="radio" onClick="hithead(10)"></td> 
+<td><input type="radio" onClick="hithead(11)"></td> 
+<td><input type="radio" onClick="hithead(12)"></td> 
+<td><input type="radio" onClick="hithead(13)"></td> 
+<td><input type="radio" onClick="hithead(14)"></td> 
+<td><input type="radio" onClick="hithead(15)"></td> 
+<td><input type="radio" onClick="hithead(16)"></td> 
+<td><input type="radio" onClick="hithead(17)"></td> 
+<td><input type="radio" onClick="hithead(18)"></td> 
+<td><input type="radio" onClick="hithead(19)"></td> 
+</tr> 
+<tr> 
+<td><input type="radio" onClick="hithead(20)"></td> 
+<td><input type="radio" onClick="hithead(21)"></td> 
+<td><input type="radio" onClick="hithead(22)"></td> 
+<td><input type="radio" onClick="hithead(23)"></td> 
+<td><input type="radio" onClick="hithead(24)"></td> 
+<td><input type="radio" onClick="hithead(25)"></td> 
+<td><input type="radio" onClick="hithead(26)"></td> 
+<td><input type="radio" onClick="hithead(27)"></td> 
+<td><input type="radio" onClick="hithead(28)"></td> 
+<td><input type="radio" onClick="hithead(29)"></td> 
+</tr> 
+<tr> 
+<td><input type="radio" onClick="hithead(30)"></td> 
+<td><input type="radio" onClick="hithead(31)"></td> 
+<td><input type="radio" onClick="hithead(32)"></td> 
+<td><input type="radio" onClick="hithead(33)"></td> 
+<td><input type="radio" onClick="hithead(34)"></td> 
+<td><input type="radio" onClick="hithead(35)"></td> 
+<td><input type="radio" onClick="hithead(36)"></td> 
+<td><input type="radio" onClick="hithead(37)"></td> 
+<td><input type="radio" onClick="hithead(38)"></td> 
+<td><input type="radio" onClick="hithead(39)"></td> 
+</tr> 
+<tr> 
+<td><input type="radio" onClick="hithead(40)"></td> 
+<td><input type="radio" onClick="hithead(41)"></td> 
+<td><input type="radio" onClick="hithead(42)"></td> 
+<td><input type="radio" onClick="hithead(43)"></td> 
+<td><input type="radio" onClick="hithead(44)"></td> 
+<td><input type="radio" onClick="hithead(45)"></td> 
+<td><input type="radio" onClick="hithead(46)"></td> 
+<td><input type="radio" onClick="hithead(47)"></td> 
+<td><input type="radio" onClick="hithead(48)"></td> 
+<td><input type="radio" onClick="hithead(49)"></td> 
+</tr> 
+<tr> 
+<td><input type="radio" onClick="hithead(50)"></td> 
+<td><input type="radio" onClick="hithead(51)"></td> 
+<td><input type="radio" onClick="hithead(52)"></td> 
+<td><input type="radio" onClick="hithead(53)"></td> 
+<td><input type="radio" onClick="hithead(54)"></td> 
+<td><input type="radio" onClick="hithead(55)"></td> 
+<td><input type="radio" onClick="hithead(56)"></td> 
+<td><input type="radio" onClick="hithead(57)"></td> 
+<td><input type="radio" onClick="hithead(58)"></td> 
+<td><input type="radio" onClick="hithead(59)"></td> 
+</tr> 
+<tr><td colspan=10><hr size=1></td> 
+</tr></table></center>
+</form> 
+<br />
+<p>注：将鼠标移至“游戏规则”上查看游戏相关规则，左边是滑动标签，右边是点击标签，中间是游戏界面。</p>
+</body>
+</html>

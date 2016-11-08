@@ -1,0 +1,29 @@
+
+	body {text-align: center;
+		font-family:sans-serif;
+		font-size:100%; 
+      background-image:url(1.jpg); background-repeat:repeat；
+	}
+    #div1{font-family:monospace;font-size:200%; width:280; height: 50px; background:#FFCC99; border:1px solid #FF9900; display:none; margin-left: auto;
+margin-right: auto;}
+     h2{
+     	font-family:monospace;
+     }
+     .table1{
+      height: 300px;
+      width: 300px;
+      background-color: pink;
+     }
+     .nTab1{float:left;width:350px;height:100px;margin:30px auto;background:#aaa;border:1px solid #333;overflow:hidden}
+.nTab2{float:right;width:350px;height:100px;margin:30px auto;background:#aaa;border:1px solid #333;overflow:hidden}
+.none {display:none;}
+.nTab1 .TabTitle li{float:left;cursor:pointer;height:30px;line-height:30px;font-weight:bold;text-align:center;width:124px}
+.nTab1 .TabTitle li a{text-decoration:none;}
+.nTab1 .TabTitle .active{background:#ccc;color:#336699}
+.nTab1 .TabTitle .normal{background:#666;color:#fff}
+.nTab1 .TabContent{clear:both;overflow:hidden;background:#fff;padding:5px;display:block}
+.nTab2 .TabTitle li{float:left;cursor:pointer;height:30px;line-height:30px;font-weight:bold;text-align:center;width:124px}
+.nTab2 .TabTitle li a{text-decoration:none;}
+.nTab2 .TabTitle .active{background:#ccc;color:#336699}
+.nTab2 .TabTitle .normal{background:#666;color:#fff}
+.nTab2 .TabContent{clear:both;overflow:hidden;background:#fff;padding:5px;display:block}
